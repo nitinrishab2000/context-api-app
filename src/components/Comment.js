@@ -1,9 +1,6 @@
 import React from "react";
-import { useContext } from "react";
-import UserInfoContext from "../context/UserInfoContext";
 
-const Comment = () => {
-  const { username, isAdmin } = useContext(UserInfoContext);
+const Comment = ({ username, isAdmin }) => {
   return (
     <div>
       <h3>Comments</h3>
